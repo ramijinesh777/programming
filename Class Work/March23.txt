@@ -5,7 +5,7 @@ Staps :-
 3) Now instal Git Bash from google & install it.
     + Now open git bash terminal
     + git --version - see git version
-    + ls command - see all folders
+    + ls - see all folders
     + clear - for clear all things in terminal
     + pwd - to see working directory
 
@@ -13,3 +13,73 @@ Staps :-
     -> git config --global user.name "My Name"
     -> git config --globle user.email "xyz@gmail.com"
     -> git config --list
+
+5) Clone & Status Command: (Use in VS Code Terminal also) 
+    clone : Cloning a repository on our local machine.
+        git clone "some link"
+    
+        Note : Its use copy file from github website
+            --> cd command      : to enter any folder or directory
+            --> ls command      : to see all files in folder
+            --> ls -a command   : to see all file with hidden file also
+            --> Use clear command to clear terminal
+    
+    status : displays the state of the Code
+        git status
+
+        Note : Its use to see a change in local system to github website like..
+            --> git status # on branch main (your branch is up to date) - northing to commit
+            --> If there is a change in local system so its see modified
+                    1. modified     : you did some change in same file (Changed)
+                    2. untracked    : you creat new file in same directory (New file that git doesnt track)
+                    3. staged       : file is ready to be committed
+                    4. unmodified   : unchanged
+                If you modified file and creat new file then you can add it. "so it show staged status"
+            --> Two Stap process needed : (1) add (2) commit
+6) Add & Commit Command :
+    -> add : adds new or changed file in your working directory to the Git staging area.
+            git add "file name" -- to add perticular file.
+            git add .           -- to directly add multiple files.
+
+    -> commit : It is the record of change
+            git commit -m "some message" 
+
+7) Push Command : upload local repository content to remote repository
+            git push origin main
+
+-----------------------------------------------------------------------------------------------------------------
+WHEN YOU START NEW PROJECT WITH YOUR LOCAL SYSTEM THEN PUCH IT IN REMOTE SYSTEM
+-----------------------------------------------------------------------------------------------------------------
+stape 1 : init - command : used to creat a new git repository
+
+            git init
+            git remote add origin "link"
+            git remote -v                       (to verify remote)
+            git branch                          (to check branch)
+            git branch -M main                  (to rename branch)
+            git push origin main
+
+Example : In project folder create another new folder
+command : 
+1. cd           : to change directory or folder
+2. cd ..        : back in directory or folder
+3. mkdir        : make directly (mkdir newfolder)
+4. cd newfolder : to enter new folder
+------------------------------------------------------
+-> First git repository create 
+        (+) To check it : ls -a (Hidden file jova) (no .git hidden folder)
+        (+) git init (then check ls -a now it show .git folder)
+            - now creat any file like .py
+        (+) git ststus (to check if it is unchanged, untracked etc..)
+        (+) git add
+        (+) git commit -m "any msg"
+        (+) git status
+-> Go to remote system (github.com)
+        (+) create new repository
+        (+) git remote add origin "link past" (in local system)
+        (+) git remote -v                       (-v : to verify remote)
+        (+) git branch                          (to check branch)
+        (+) git branch -M main                  (-M : to rename branch)
+        (+) git push -u origin main (future shortcut direct : git push )
+
+
