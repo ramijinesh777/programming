@@ -1,0 +1,15 @@
+Github & Git Bash
+Staps :-
+1) Creat an account in Github.com
+2) Create new repositories
+3) Now instal Git Bash from google & install it.
+    + Now open git bash terminal
+    + git --version - see git version
+    + ls command - see all folders
+    + clear - for clear all things in terminal
+    + pwd - to see working directory
+
+4) Now you need to configur Git :
+    -> git config --global user.name "My Name"
+    -> git config --globle user.email "xyz@gmail.com"
+    -> git config --list
