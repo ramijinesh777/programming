@@ -1,41 +1,3 @@
-# Functions:
-
-#--> Functions is block of code that we can use it again & again.
-    # There are 2 Staps - 1) Defination (2) Call
-
-#--> Two types of functions
-    # Built in functions - Total 71 types are there.
-    # User Defined
-#==> User Defined function : 4 Types
-    # (1) Functions without perameters & without return type.
-    # (2) Functions with perameters & without return type.
-    # (3) Functions without perameters & with return type.
-    # (4) Functions with perameters & with return type.
-
-###########################################################################
-# Type : 1 --> Function without parameters & without return type
-###########################################################################
-# def fun1(): #defination
-#     n = int(input("Enter Number : "))
-#     if(n%2 == 0):
-#         print("EVEN NO..!!")
-#     else:
-#         print("ODD..!!")
-
-# fun1() # call
-
-###############################################################
-
-# def fact():
-#     n = int(input("Enter Number : "))
-#     fac = 1
-
-#     for i in range(1, n+1):
-#         fac *= i
-#     print("Factorial : ",fac)
-# fact()
-
-###############################################################
 
 # def revrse():
 #     n  = int(input("Enter Number : "))
@@ -127,3 +89,54 @@
 #     else:
 #         print("Invalid Choice")
 #         break
+
+###########################################################################################
+while True:
+    menu = """
+    1. Addition
+    2. Subtraction
+    3. Multiplication
+    4. Division
+    5. Exit
+    """
+    print(menu)
+    choice = int(input("Enter your choice : "))
+
+    def add():
+        a = int(input("Enter Number : "))
+        b = int(input("Enter Number : "))
+        print("Sum is : ", a+b)
+
+    def sub():
+        a = int(input("Enter Number : "))
+        b = int(input("Enter Number : "))
+        print("Subtraction is : ", a-b)
+
+    def multi():
+        a = int(input("Enter Number : "))
+        b = int(input("Enter Number : "))
+        print("Multiplication is : ", a*b)
+
+    def divi():
+        a = int(input("Enter Number : "))
+        b = int(input("Enter Number : "))
+        if (a != 0):
+            print("Division is : ", a/b)
+        else:
+            print("Cant Divided by zero")
+
+
+    if choice == 1:
+        add()
+    elif choice == 2:
+        sub()
+    elif choice == 3:
+        multi()
+    elif choice == 4:
+        divi()
+    elif choice == 5:
+        print("Thanks...!!!")
+        break
+    else:
+        print("Invalid Choice..!!!")
+        break
