@@ -16,3 +16,4 @@ b1 = a[:2] + b[2:]
 str = a1 +" "+b1
 
 print("Final Result : ",str)
+

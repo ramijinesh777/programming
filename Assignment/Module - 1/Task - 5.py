@@ -16,3 +16,4 @@ elif str.endswith("ing"):           # Step 2 : Check our string endswith 'ing'. 
 else:                               # Step 3 : as per Step 2 if not so apply else and add 'ing'
     result = str + "ing"
 print("Final out-put : ",result)
+
