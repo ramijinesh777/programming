@@ -61,6 +61,8 @@ print(l)
 # WAP if our list is palindrom or not.(only use one variable) - DO YOUR SELF
 # l = [10,20,30,20,10]
 # left = 0
+
+
 # right = len(l)-1
 # rev = l
 
