@@ -1,0 +1,6 @@
+Transaction_ID;Customer;Amount;Payment_Mode;Status
+1001;Rahul;250;UPI;Success
+1002;Amit;;Wallet;Success
+1003;Priya;500;;Failed
+1004;Neha;700;UPI;
+1005;Karan;300;Card;Success
